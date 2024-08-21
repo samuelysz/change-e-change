@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <title>Carrinho</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;0,900;1,600;1,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="header-back">
+      <div class="header">
+        <a href="./index.html"><img class="logo" src="./img/logo.svg" alt="Logo Change & Change"></a>
+        <div class="processos">
+          <div class="global">
+            <span class="processo">1</span>
+            <span class="posicao1">Carrinho</span>
+          </div>
+          <div class="global">
+            <span class="nao-concluido">2</span>
+            <span class="diferente posicao2">Pagamento</span>
+          </div>
+          <div>
+            <span class="nao-concluido">3</span>
+            <span class="diferente">Concluido</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-container">
+      <div class="info-conteiner">
+        <h2>Produtos</h2>
+        <img src="./img/Produtos/Travis-scott/nike-travis.jpeg" alt="">
+        <div>
+          <p>Travis Scott x Nike Air Force 1 - Cactus Jack</p>
+          <p>Tamanho: 38</p>
+        </div>
+      </div>
+      <div class="extra-container">
+        <div class="quantidade-container">
+          <h3>Quantidade</h3>
+          <input type="number" name="quantidade" id="quantidade" min="1" value="1">
+        </div>
+        <div class="unitario-container">
+          <h3>Valor Unitário</h3>
+          <p class="desconto">R$ 2850,00</p>
+          <p>R$ 2700,00</p>
+        </div>
+        <div class="entrega-container">
+          <h3>Valor do Frete</h3>
+          <p>Digite o valor do produto:</p>
+          <label for="valor"></label>
+          <input type="number" id="valor" placeholder="Digite o valor">
+          <button onclick="calcularFrete()"> Calcular</button>
+
+          <script>
+            function calcularFrete() {
+              var valor = document.getElementById("valor").value;
+              var taxaFrete = valor * 0.1;
+              var totalCompra = 2700.00; // Valor total da compra (exemplo)
+              var totalComFrete = totalCompra + taxaFrete;
+
+              document.getElementById("resultado").textContent = "Taxa de frete: R$ " + taxaFrete.toFixed(2);
+              document.getElementById("frete").textContent = "R$ " + taxaFrete.toFixed(2);
+              document.getElementById("totalCompra").textContent = "R$ " + totalComFrete.toFixed(2);
+            }
+          </script>
+          <p id="resultado">Taxa de frete:</p>
+        </div>
+      </div>
+      <div class="resumo-container">
+        <div class="detalhe">
+          <h3>Resumo</h3>
+        </div>
+        <div class="grid-resumo detalhe">
+          <p>Valor dos produtos:</p>
+          <p class="valor">R$ 2700,00</p>
+        </div>
+        <div class="grid-resumo detalhe">
+          <p>Frete:</p>
+          <p class="valor" id="frete">A calcular</p>
+        </div>
+        <div class="grid-resumo">
+          <p>Total da compra:</p>
+          <p class="valor margin-container" id="totalCompra">R$ 2700,00</p>
+        </div>
+        <a class="continuar" href="./pagamento.html">Continuar</a>
+      </div>
+    </div>
+  </main>
+
+
+  <footer class="rodape">
+    <p>Change & Change. Alguns direitos reservados.</p>
+    <div>
+      <a href="./privacidade.html">Política de privacidade</a>
+      <a href="./termos.html">Termos de uso</a>
+    </div>
+  </footer>
+
+</body>
+
+</html>

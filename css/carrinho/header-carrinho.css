@@ -1,0 +1,86 @@
+.processos {
+  display: flex;
+  gap: 3rem;
+  margin-right: 2rem;
+}
+.processos {
+  color: #ffffff;
+}
+
+.processo {
+  border: 2px solid #345f13;
+  padding: 0.2rem 0.7rem;
+  border-radius: 100%;
+  color: #345f13;
+  margin-right: 7px;
+}
+
+.nao-concluido {
+  border: 2px solid #424242;
+  background: #424242;
+  padding: 0.2rem 0.7rem;
+  border-radius: 100%;
+  color: #2b2b2b;
+  margin-right: 7px;
+}
+
+.diferente {
+  color: #424242;
+}
+
+.global {
+  margin-right: 5rem;
+}
+
+.posicao1 {
+  position: relative;
+}
+
+.posicao1::after {
+  content: "";
+  position: absolute;
+  left: 5.2rem;
+  bottom: 8px;
+  width: 100px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #424242;
+}
+
+.posicao2 {
+  position: relative;
+}
+
+.posicao2::after {
+  content: "";
+  position: absolute;
+  left: 6.7rem;
+  bottom: 8px;
+  width: 100px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #424242;
+}
+
+@media (max-width: 420px) {
+  .processos {
+    padding: 1rem;
+  }
+  .posicao1::after {
+    display: none;
+  }
+  .posicao2::after {
+    display: none;
+  }
+  .global {
+    margin: 0px;
+  }
+  .processo {
+    padding: 0.01rem 0.5rem;
+    margin-right: 5px;
+  }
+  .nao-concluido {
+    padding: 0.01rem 0.5rem;
+    margin-right: 5px;
+  }
+}

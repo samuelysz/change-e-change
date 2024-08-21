@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagamento</title>
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;0,900;1,600;1,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="header-back">
+      <div class="header">
+        <a href="./index.html"><img class="logo" src="./img/logo.svg" alt="Logo Change & Change"></a>
+        <div class="processos">
+          <div class="global">
+            <span class="processo2">1</span>
+            <span class="posicao0">Carrinho</span>
+          </div>
+          <div class="global">
+            <span class="processo">2</span>
+            <span class="posicao2">Pagamento</span>
+          </div>
+          <div>
+            <span class="nao-concluido">3</span>
+            <span class="diferente">Concluido</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="pagamento">
+      <div class="detalhe-pag">
+        <h1>Detalhes de cobrança</h1>
+        <input type="text" name="nome" placeholder="Nome e Sobrenome">
+        <input type="email" name="email" placeholder="Endereço de email">
+        <select id="pais" name="pais">
+          <option value="" disabled selected>Selecione um país</option>
+          <option value="brasil">Brasil</option>
+          <option value="argentina">Argentina</option>
+          <option value="estados-unidos">Estados Unidos</option>
+          <option value="franca">França</option>
+          <option value="espanha">Espanha</option>
+        </select>
+        <div class="cep">
+          <select id="estado" name="estado" required>
+            <option value="" disabled selected>Selecione o estado</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </select>
+          <div class="margin">
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" maxlength="8" placeholder="00000-000" required>
+          </div>
+        </div>
+      </div>
+      <div class="pagamento-pag">
+        <h1>Forma de pagamento</h1>
+        <label>
+          <input type="radio" name="forma de pagamento" value="Cartao de crédito">
+          Cartão de crédito
+        </label>
+        <input type="nunber" name="nome" placeholder="Numero do cartão">
+        <p>Data de validade</p>
+        <div class="detalhe-cartao">
+          <label>
+            Mês:
+            <input type="number" name="mes" min="1" max="12" required>
+          </label>
+          <label class="ano">
+            Ano:
+            <input type="number" name="ano" min="2022" max="2050" required>
+          </label>
+          <input type="text" id="cvv" name="cvv" placeholder="Código de Segurança:" pattern="[0-9]{3,4}" required>
+        </div>
+      </div>
+      <div class="confirmar">
+        <p class="termos-pag">Ao clicar no botão, você concorda com os <a href="">Termos e Condições</a></p>
+        <a class="finalizar" href="./concluido.html">Finalizar Compra</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <p>Change & Change. Alguns direitos reservados.</p>
+    <div>
+      <a href="./privacidade.html">Política de privacidade</a>
+      <a href="./termos.html">Termos de uso</a>
+    </div>
+  </footer>
+
+  </main>
+</body>

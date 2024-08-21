@@ -1,0 +1,154 @@
+.main-produto {
+  margin-top: 1rem;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 3rem;
+  place-content: space-between;
+}
+
+.main-produto img {
+  width: 450px;
+  justify-self: end;
+  border-radius: 3px;
+}
+
+.numero img {
+  width: 40px;
+}
+
+.info {
+  display: grid;
+  place-content: space-between;
+  grid-column: 2;
+  grid-row: 1/3;
+}
+
+.info h1 {
+  font-size: 2rem;
+}
+
+.info .valor {
+  font-size: 2rem;
+}
+
+.info p {
+  font-size: 1.2rem;
+}
+
+.tamanho {
+  background: #141414;
+  display: flex;
+  flex-direction: column;
+  width: 26rem;
+  padding: 2rem;
+  gap: 4rem;
+  border-radius: 3px;
+  place-content: space-between;
+}
+
+.tamanho select {
+  color: #fff;
+  background-color: #000;
+  border: solid 4px #000;
+  font-size: 1.2rem;
+  height: 3.5rem;
+  padding: 0px 0.5rem;
+  border-radius: 3px;
+}
+
+.tamanho a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #222a1c;
+  font-weight: bold;
+  background: #fff;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.tamanho a:hover {
+  color: #fff;
+  background: #345f13;
+}
+
+.numero {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-self: start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.paragrafo-produto {
+  width: 30rem;
+}
+
+.outras-fotos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end; /* Alinha as imagens à direita */
+  gap: 1rem;
+}
+
+.outras-fotos img {
+  width: 100px; /* Ajuste o tamanho das imagens conforme necessário */
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+@media (max-width: 700px) {
+  .main-produto {
+    margin-top: 0;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    padding: 3rem;
+  }
+  .info h1 {
+    font-size: 1.5rem;
+  }
+
+  .info .valor {
+    font-size: 1.5rem;
+  }
+
+  .info p {
+    font-size: 0.8rem;
+    width: 20rem;
+  }
+  .info {
+    grid-column: 1;
+    grid-row: 1;
+    gap: 1rem;
+  }
+
+  .tamanho {
+    width: 20rem;
+    padding: 1.5rem;
+    gap: 4rem;
+  }
+
+  .main-produto img {
+    width: 350px;
+    justify-self: center;
+    border-radius: 3px;
+    grid-column: 1;
+  }
+  .numero img {
+    width: 40px;
+  }
+
+  .outras-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .outras-fotos img {
+    width: 75px;
+    border-radius: 3px;
+    object-fit: cover;
+  }
+}

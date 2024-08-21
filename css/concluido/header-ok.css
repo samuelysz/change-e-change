@@ -1,0 +1,18 @@
+.posicao3 {
+  position: relative;
+}
+
+.posicao3::after {
+  content: "";
+  position: absolute;
+  left: 6.7rem;
+  bottom: 8px;
+  width: 100px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #345f13;
+}
+
+.diferente2 {
+  color: #fff;
+}

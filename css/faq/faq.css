@@ -1,0 +1,145 @@
+/* Estilos Padrão */
+h1,
+h2,
+p {
+  margin: 0px;
+  color: #ffffff;
+}
+
+body {
+  margin: 0;
+  background: #000000;
+  font-family: poppins;
+}
+/* FIM Estilos Padrão */
+
+/* Estilos Barra de navegação e login */
+.login {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background: #070707;
+  width: 100%;
+  text-align: center;
+  padding: 0.2rem;
+  box-sizing: border-box;
+}
+
+.cadastrese {
+  text-align: end;
+  padding: 1rem;
+}
+
+.juntese {
+  margin-right: 1rem;
+}
+
+.logo {
+  display: block;
+  width: 6rem;
+}
+
+.login a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.2s;
+}
+
+.login a:hover {
+  color: #345f13;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #000000;
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 0.8rem 1.8rem;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  color: #ffffff;
+  background-color: #345f13;
+}
+/* FIM Estilos Barra de navegação e login */
+
+main {
+  padding: 5rem 6rem;
+}
+
+main h1 {
+  font-size: 1.5rem;
+}
+
+main img {
+  width: 70px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.pergunta1 {
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+}
+
+.pergunta1 p {
+  grid-column: 2;
+}
+
+.pergunta1 a {
+  color: #ffffff;
+}
+
+/* Estilos do rodapé */
+footer {
+  margin-top: 3.5rem;
+  background: #070707;
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+footer p {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+footer a {
+  display: inline-block;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: #345f13;
+}
+/* FIM Estilos do rodapé */
+
+/* Barra de rolagem invisível */
+::-webkit-scrollbar {
+  width: 0px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+/* FIM Barra de rolagem invisível */

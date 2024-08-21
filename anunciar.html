@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <title>Anunciar</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;0,900;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="header-back">
+      <div class="header">
+        <a href="./index.html"><img class="logo" src="./img/logo.svg" alt="Logo Change & Change"></a>
+        <div class="login">
+          <a href="./cadastre-se.html">Junte-se a nós</a>
+          <a href="./login.html">Entrar</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="containner-1">
+      <div class="foto">
+        <img src="./img/adicionar-foto.svg" alt="Adicionar foto">
+        <h2>Incluir fotos</h2>
+        <p>0 de 8 adicionadas</p>
+      </div>
+      <div class="colum-3">
+        <div class="categoria pt1">
+          <p>Categoria</p>
+          <label for="categoria"></label>
+          <select class="margin" id="categoria" name="categoria">
+            <option value="">Selecione uma categoria</option>
+            <option value="Calçados">Calçados</option>
+            <option value="Vestuario">Vestuario</option>
+            <option value="Acessorios">Acessórios</option>
+          </select>
+        </div>
+        <div class="estado pt1">
+          <p>Estado da peça</p>
+          <label for="estado"></label>
+          <select class="margin" id="estado" name="estado">
+            <option value="">Selecione uma opção</option>
+            <option value="nova">Nova</option>
+            <option value="seminova">Seminova</option>
+            <option value="usada">Usada</option>
+          </select>
+        </div>
+        <div class="telefone pt1">
+          <p>Telefone</p>
+          <input type="text" name="Telefone" placeholder="+55 21 994132 XXXX">
+        </div>
+        <div class="containner-anunciar">
+          <a href="#">Anunciar</a>
+        </div>
+      </div>
+      <div class="colum-2">
+        <div class="titulo pt1">
+          <p>Título do anuncio</p>
+          <input class="margin" type="text" name="Titulo do anuncio" placeholder="Ex: Air Force 1">
+        </div>
+        <div class="valor pt1">
+          <p>Valor</p>
+          <input class="margin" type="number" name="valor" placeholder="Ex: 1.200">
+        </div>
+        <div class="descricao pt1">
+          <p>Descrição</p>
+          <textarea name="descricao" rows="6" readonly placeholder="Ex: Air Force 1 com caixa e cadarço extra, sem marca de uso."></textarea>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="rodape">
+    <p>Change & Change. Alguns direitos reservados.</p>
+    <div>
+      <a href="./privacidade.html">Política de privacidade</a>
+      <a href="./termos.html">Termos de uso</a>
+    </div>
+  </footer>
+
+</body>
+
+</html>

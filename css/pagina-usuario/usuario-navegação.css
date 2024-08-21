@@ -1,0 +1,18 @@
+.header-pg-usuario {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1.2rem;
+}
+
+.header-pg-usuario svg {
+  height: 30px;
+  width: 30px;
+  padding: 0.5rem;
+}
+
+.icon-link:hover svg path {
+  fill: #345f13;
+}

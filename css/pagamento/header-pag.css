@@ -1,0 +1,23 @@
+.processo2 {
+  border: 2px solid #345f13;
+  background: #345f13;
+  padding: 0.2rem 0.7rem;
+  border-radius: 100%;
+  color: #fff;
+  margin-right: 7px;
+}
+
+.posicao0 {
+  position: relative;
+}
+
+.posicao0::after {
+  content: "";
+  position: absolute;
+  left: 5.2rem;
+  bottom: 8px;
+  width: 100px;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #345f13;
+}

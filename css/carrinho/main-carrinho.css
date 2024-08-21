@@ -1,0 +1,160 @@
+.main-container img {
+  width: 300px;
+  border-radius: 4px;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem 7rem 2rem 7rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-conteiner h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.info-conteiner p {
+  font-size: 1rem;
+  max-width: 18rem;
+  margin-top: 5px;
+}
+
+.extra-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.extra-container h3 {
+  font-size: 1.3rem;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.quantidade-container input {
+  color: #fff;
+  background: #000;
+  border: 2px solid #fff;
+  padding: 1rem;
+  border-radius: 3px;
+  width: 4rem;
+  height: 0.3rem;
+  margin-bottom: 20px;
+}
+
+.unitario-container p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.unitario-container .desconto {
+  text-decoration: line-through;
+  font-weight: normal;
+  font-size: 1rem;
+  margin-top: -5px;
+}
+
+.entrega-container {
+  grid-column: 1/-1;
+}
+
+.entrega-container input {
+  color: #fff;
+  background: #000;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  padding: 0.5rem;
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.entrega-container button {
+  background: #fff;
+  color: #222a1c;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+}
+
+.entrega-container button:hover,
+.entrega-container button:focus {
+  color: #fff;
+  background: #345f13;
+  border: 2px solid #345f13;
+}
+
+.resumo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.resumo-container h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.grid-resumo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.detalhe {
+  position: relative;
+}
+
+.detalhe::after {
+  position: absolute;
+  content: "";
+  bottom: -1.2rem;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.margin-container {
+  margin-bottom: 1rem;
+}
+
+.grid-resumo .valor {
+  text-align: end;
+}
+
+.continuar {
+  text-decoration: none;
+  color: #222a1c;
+  background: #fff;
+  padding: 0.8rem 1.2rem;
+  border-radius: 3px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+}
+
+.continuar:hover {
+  color: #fff;
+  background: #345f13;
+}
+
+@media (max-width: 1180px) {
+  .resumo-container {
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 838px) {
+  .extra-container {
+    margin-top: 2rem;
+  }
+}
